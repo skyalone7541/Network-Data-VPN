@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิธีการใช้อินเทอร์เน็ตฟรีแบบสมาร์ท</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        video {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+        .card-title {
+            font-size: 1rem;
+        }
+        .title { color: black; }
+        .dtac { color: blue; }
+        .true { color: red; }
+        .ais { color: green; }
+        .translate-btn {
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ปุ่มแปลภาษา -->
+        <div class="translate-btn">
+            <div id="google_translate_element"></div>
+        </div>
+
+        <header class="my-4">
+            <h class="card-title">โปรโมชั่นที่จำเป็นต้องสมัครสำหรับแต่ละซิม</h>
+        </header>
+
+        <div class="row">
+            <!-- การ์ด Dtac -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <img src="https://www.dtac.co.th/dtac-library/assets/img/icons/ico-dtac.png" alt="Dtac Logo" class="card-img-center" style="max-height: 50px; width: auto;">
+                        <p>หากใช้ซิม Dtac ให้สมัครแพ็กเกจ ID ก่อน</p>
+                        แพ็กเกจ ID 64 บาท / 30 วัน
+                        <p><b>*900*3958#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*900*3958%23'">สมัคร</button></p>
+                        <p>(หลังสมัครเสร็จให้เลือกไฟล์ Dtac ID และเชื่อมต่อ)</p>
+                        <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/dtac_id.jpg" class="img-thumbnail" alt="ภาพ (dtac_id)">
+                    </div>
+                </div>
+            </div>
+
+            <!-- การ์ด True -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <img src="https://topping.truemoveh.com/assets/static/images/icon_fb&true@3x.82de9630.png" alt="True Logo" class="card-img-center" style="max-height: 30px; width: auto;">
+                        <p>หากใช้ซิม True ให้สมัครแพ็กเกจ Viber ก่อน</p>
+                        แพ็กเกจ Viber 53 บาท / 30 วัน
+                        <p><b>*900*3809#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*900*3809%23'">สมัคร</button></p>
+                        <p>(หลังสมัครเสร็จให้เลือกไฟล์ True Viber และเชื่อมต่อ)</p>
+                        <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/true_viber.jpg" class="img-thumbnail" alt="ภาพ (true_viber)">
+                        <p>หรือใช้ True ID แทน</p>
+                        <p>ดูวิธีสมัคร True ID ได้จากวิดีโอด้านล่าง</p>
+                        <div>ลิงก์สำหรับสมัคร👇👇</div>
+                        <a href="#" onclick="openInBrowser()">https://topping.truemoveh.com</a>
+                        <p>(หลังสมัครเสร็จให้เลือกไฟล์ True ID (OVPN) และเชื่อมต่อ)</p>
+                        <video controls poster="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/trueid_poster.jpg">
+                            <source src="https://github.com/sansoe2022/image_store/raw/refs/heads/main/trueid_video.mp4" type="video/mp4">เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+                        </video>
+                        <p class="true">หมายเหตุ: ความเร็วที่ได้จาก Viber และ True ID อยู่ที่ประมาณ 3 Mbps โดย True ID จะเสถียรกว่า</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- การ์ด Ais -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBwSTp4vgOVqME3OlQ30ghtLyl08fqw1xsemUKEdPNm937DFZ4CZlI_Zcn&s=10" alt="Ais Logo" class="card-img-center" style="max-height: 50px; width: auto;">
+                        <p>หากใช้ซิม Ais ต้องสมัครทั้งสองแพ็กเกจด้านล่าง</p>
+                        <p>แพ็กเกจหลักและแพ็กเกจ Ais Play</p>
+                        <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/ais_play.png" class="img-thumbnail" alt="ภาพ (1)">
+                        แพ็กเกจหลัก 64kbps - 32 บาท / 30 วัน
+                        <p><b>*777*7067#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*777*7067%23'">สมัคร</button></p>
+                        <p>แพ็กเกจ Ais Play - 64 บาท / 30 วัน</p>
+                        <p><b>*777*885#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*777*885%23'">สมัคร</button></p>
+                        <p class="true">หมายเหตุ: ต้องสมัครทั้งสองแพ็กเกจถึงจะใช้งานได้</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-4">
+            <p>&copy; 2024 NETWORK DC</p>
+        </footer>
+    </div>
+
+    <!-- Google Translate script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'th',
+                includedLanguages: 'en,th,my', 
+                layout: google.translate.TranslateElement.InlineLayout.DROPDOWN
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        function isWebView() {
+            let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            return /wv|WebView/i.test(userAgent);
+        }
+
+        function openInBrowser() {
+            window.location.href = "https://topping.truemoveh.com/";
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
