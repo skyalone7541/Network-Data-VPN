@@ -1,13 +1,13 @@
 {
   
-"version": 76,
+"version": 77,
 "message": "14:52PM 30/12/2024\nConfig version: 72 \nWhat's new \n\nV2ray ยินดีต้อนรับ V2ray เทสระบบ ",
 "fileUrl": "https://raw.githubusercontent.com/skyalone7541/Network-Data-VPN/refs/heads/main/config.json",
 
 "messageWarning":"What's new ?\n• Updated UI \n• Added Hotshare function \n• Fixed bug and more\n \nThanks for your understand❤️",
 "title":"Can't use continue current version, you need to upgrade V1.0.2 ",
-"link":"https://play.google.com/store/apps/details?id=com.svpnmm.mmdev",
-"website":"https://play.google.com/store/apps/details?id=com.svpnmm.mmdev",
+"link":"https://play.google.com/store/apps/details?id=co.networkdc.vpn",
+"website":"https://play.google.com/store/apps/details?id=co.networkdc.vpn",
 "versionCode": 1
   
 }
