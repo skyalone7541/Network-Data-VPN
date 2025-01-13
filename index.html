@@ -3,53 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>วิธีการใช้อินเทอร์เน็ตฟรีแบบสมาร์ท</title>
+    <title>วิธีการใช้อินเทอร์เน็ตฟรี</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            background-color: #000; /* พื้นหลังสีดำ */
-            color: #fff; /* ข้อความสีขาว */
-        }
-        .container {
-            background-color: #1a1a1a; /* กล่องพื้นหลังสีดำอ่อน */
+        video {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            border: 2px solid #000;
             border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(255, 0, 0, 0.7); /* เงาสีแดง */
         }
-        h, .card-title, .translate-btn {
-            color: #ff0000; /* หัวข้อและปุ่มแปลสีแดง */
+        .card-title {
+            font-size: 1rem;
         }
-        .dtac, .true, .ais {
-            font-weight: bold;
-        }
-        .dtac {
-            color: #ff6666; /* สีแดงอ่อนสำหรับ Dtac */
-        }
-        .true {
-            color: #ff0000; /* สีแดงสำหรับ True */
-        }
-        .ais {
-            color: #990000; /* สีแดงเข้มสำหรับ Ais */
-        }
-        .btn-primary {
-            background-color: #ff0000; /* ปุ่มสีแดง */
-            border-color: #ff0000;
-        }
-        .btn-primary:hover {
-            background-color: #cc0000; /* สีปุ่มเมื่อชี้เมาส์ */
-            border-color: #cc0000;
-        }
-        .card {
-            background-color: #1a1a1a; /* การ์ดพื้นหลังสีดำอ่อน */
-            border: 1px solid #ff0000; /* ขอบสีแดง */
-        }
-        .card img {
-            border: 2px solid #ff0000; /* ขอบรูปภาพสีแดง */
-            border-radius: 5px;
-        }
-        footer {
-            margin-top: 20px;
-            color: #ff0000; /* สีข้อความใน Footer */
+        .title { color: black; }
+        .dtac { color: blue; }
+        .true { color: red; }
+        .ais { color: green; }
+        .translate-btn {
+            margin-top: 10px;
+            text-align: center;
         }
     </style>
 </head>
@@ -62,67 +35,70 @@
         </div>
 
         <header class="my-4">
-            <h class="card-title">โปรโมชั่นที่จำเป็นต้องสมัครสำหรับแต่ละซิม</h>
+            <h class="card-title">สิ่งที่ต้องการสำหรับการใช้อินเทอร์เน็ตฟรี</h>
         </header>
 
         <div class="row">
-            <!-- การ์ด Dtac -->
+            <!-- Dtac Card -->
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
                         <img src="https://www.dtac.co.th/dtac-library/assets/img/icons/ico-dtac.png" alt="Dtac Logo" class="card-img-center" style="max-height: 50px; width: auto;">
-                        <p>หากใช้ซิม Dtac ให้สมัครแพ็กเกจ ID ก่อน</p>
-                        แพ็กเกจ ID 64 บาท / 30 วัน
-                        <p><b>*900*3958#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*900*3958%23'">สมัคร</button></p>
-                        <p>(หลังสมัครเสร็จให้เลือกไฟล์ Dtac ID และเชื่อมต่อ)</p>
-                        <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/dtac_id.jpg" class="img-thumbnail" alt="ภาพ (dtac_id)">
+                        <p>หากใช้ซิม Dtac ต้องสมัครแพ็กเกจ id ก่อน</p>
+                        id แพ็กเกจ 64 บาท / 30 วัน
+                        <p><b>*900*3958#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*900*3958%23'">เพื่อสมัคร</button></p>
+                        <p>(หลังสมัคร id แล้ว ให้เลือกไฟล์ Dtac ID และเชื่อมต่อ)</p>
+                        <img src="https://bbm2gth.shop/Dtac_ID.jpg" class="img-thumbnail" alt="ภาพ (dtac_id)">
                     </div>
                 </div>
             </div>
 
-            <!-- การ์ด True -->
+            <!-- True Card -->
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
                         <img src="https://topping.truemoveh.com/assets/static/images/icon_fb&true@3x.82de9630.png" alt="True Logo" class="card-img-center" style="max-height: 30px; width: auto;">
-                        <p>หากใช้ซิม True ให้สมัครแพ็กเกจ Viber ก่อน</p>
-                        แพ็กเกจ Viber 53 บาท / 30 วัน
-                        <p><b>*900*3809#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*900*3809%23'">สมัคร</button></p>
-                        <p>(หลังสมัครเสร็จให้เลือกไฟล์ True Viber และเชื่อมต่อ)</p>
-                        <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/true_viber.jpg" class="img-thumbnail" alt="ภาพ (true_viber)">
-                        <p>หรือใช้ True ID แทน</p>
-                        <p>ดูวิธีสมัคร True ID ได้จากวิดีโอด้านล่าง</p>
-                        <div>ลิงก์สำหรับสมัคร👇👇</div>
-                        <a href="#" onclick="openInBrowser()" style="color: #ff0000;">https://topping.truemoveh.com</a>
-                        <p>(หลังสมัครเสร็จให้เลือกไฟล์ True ID (OVPN) และเชื่อมต่อ)</p>
-                        <video controls poster="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/trueid_poster.jpg">
-                            <source src="https://github.com/sansoe2022/image_store/raw/refs/heads/main/trueid_video.mp4" type="video/mp4">เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+                        <p>หากใช้ซิม True ต้องสมัครแพ็กเกจ viber ก่อน</p>
+                        viber แพ็กเกจ 53 บาท / 30 วัน
+                        <p><b>*900*3809#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*900*3809%23'">เพื่อสมัคร</button></p>
+                        <p>(หลังสมัคร viber แล้ว ให้เลือกไฟล์ True Viber และเชื่อมต่อ)</p>
+                        <img src="https://bbm2gth.shop/True_viber.jpg" class="img-thumbnail" alt="ภาพ (true_viber)">
+                        <p>.</p>
+                        <p>.</p>
+                        <p>.</p>
+                        <p>อีกวิธีสำหรับ True</p>
+                        <p>ใช้แพ็กเกจ True ID และดูวิธีการในวิดีโอด้านล่าง</p>
+                        <div>ลิงก์สมัคร 👇👇</div>
+                        <a href="#" onclick="openInBrowser()">https://topping.truemoveh.com</a>
+                        <p>หลังจากสมัคร True ID แล้ว ให้เลือก True ID (OVPN) เพื่อเชื่อมต่อ</p>
+                        <video controls poster="https://bbm2gth.shop/True_ID.jpg">
+                            <source src="https://github.com/sansoe2022/image_store/raw/refs/heads/main/trueid_video.mp4" type="video/mp4">เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
                         </video>
-                        <p class="true">หมายเหตุ: ความเร็วที่ได้จาก Viber และ True ID อยู่ที่ประมาณ 3 Mbps โดย True ID จะเสถียรกว่า</p>
+                        <p class="true">หมายเหตุ: ความเร็วเน็ต 3mbps แพ็กเกจ True ID มีปัญหาการเชื่อมต่อน้อยกว่า</p>
                     </div>
                 </div>
             </div>
 
-            <!-- การ์ด Ais -->
+            <!-- Ais Card -->
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBwSTp4vgOVqME3OlQ30ghtLyl08fqw1xsemUKEdPNm937DFZ4CZlI_Zcn&s=10" alt="Ais Logo" class="card-img-center" style="max-height: 50px; width: auto;">
-                        <p>หากใช้ซิม Ais ต้องสมัครทั้งสองแพ็กเกจด้านล่าง</p>
-                        <p>แพ็กเกจหลักและแพ็กเกจ Ais Play</p>
-                        <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/ais_play.png" class="img-thumbnail" alt="ภาพ (1)">
-                        แพ็กเกจหลัก 64kbps - 32 บาท / 30 วัน
-                        <p><b>*777*7067#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*777*7067%23'">สมัคร</button></p>
-                        <p>แพ็กเกจ Ais Play - 64 บาท / 30 วัน</p>
-                        <p><b>*777*885#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*777*885%23'">สมัคร</button></p>
-                        <p class="true">หมายเหตุ: ต้องสมัครทั้งสองแพ็กเกจถึงจะใช้งานได้</p>
+                        <p>สำหรับซิม Ais ต้องสมัคร 2 แพ็กเกจ</p>
+                        <p>หลังสมัครโปรโมชั่นหลักและ Ais Play แล้ว ให้เลือกไฟล์ Ais_Play เพื่อเชื่อมต่อ</p>
+                        <img src="https://bbm2gth.shop/Ais_Play.jpg" class="img-thumbnail" alt="ภาพ (1)">
+                        โปรโมชั่นหลัก 64kbps - 32 บาท / 30 วัน
+                        <p><b>*777*7067#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*777*7067%23'">เพื่อสมัคร</button></p>
+                        <p>Ais Play แพ็กเกจ - 64 บาท / 30 วัน</p>
+                        <p><b>*777*885#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*777*885%23'">เพื่อสมัคร</button></p>
+                        <p class="true">หมายเหตุ: ต้องสมัครทั้งสองแพ็กเกจก่อนใช้งาน</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <footer class="text-center mt-4">
-            <p>&copy; 2024 NETWORK DC</p>
+            <p>&copy; 2024 โปรโมชั่นอินเทอร์เน็ตฟรี</p>
         </footer>
     </div>
 
@@ -131,7 +107,7 @@
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'th',
-                includedLanguages: 'en,th,my', 
+                includedLanguages: 'en,th,my',
                 layout: google.translate.TranslateElement.InlineLayout.DROPDOWN
             }, 'google_translate_element');
         }
