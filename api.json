@@ -1,7 +1,7 @@
 {
   
-"version": 81,
-"message": "14:52PM 30/12/2024\nConfig version: 76 \nVPN NETWORK DC\n\nอัพเดต \nTRUE Viu SSH \nTRUE Viu OPVN \nพวกใช้แอพม็อดระวังเครื่องจะพังเอานะจุ๊บๆ ",
+"version": 82,
+"message": "14:52PM 30/12/2024\nConfig version: 77 \nVPN NETWORK DC\nอัพเดต \nTRUE Viu SSH \nTRUE Viu OPVN \nพวกใช้แอพม็อดระวังเครื่องจะพังเอานะจุ๊บๆ ",
 "fileUrl": "https://raw.githubusercontent.com/skyalone7541/Network-Data-VPN/refs/heads/main/config.json",
 
 "messageWarning":"What's new ?\n• Updated UI \n• Added Hotshare function \n• Fixed bug and more\n \nThanks for your understand❤️",
