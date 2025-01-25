@@ -1,7 +1,7 @@
 {
   
-"version": 83,
-"message": "00:18น. 15/01/2025\nConfig version: 80 \nVPN NETWORK DC\nอัพเดต \nTRUE Viu SSH \nTRUE Viu OPVN \nพวกใช้แอพม็อดระวังเครื่องจะพังเอานะจุ๊บๆ ",
+"version": 84,
+"message": "18:00น. 25/01/2025\nConfig version: 81 \nVPN NETWORK DC\nอัพเดต \nDtac Nopro Opvn \nอัพเดตเพิ่มเซิฟเวอร์ฟรี/VIP \nพวกใช้แอพม็อดระวังเครื่องจะพังเอานะจุ๊บๆ ",
 "fileUrl": "https://raw.githubusercontent.com/skyalone7541/Network-Data-VPN/refs/heads/main/config.json",
 
 "messageWarning":"What's new ?\n• Updated UI \n• Added Hotshare function \n• Fixed bug and more\n \nThanks for your understand❤️",
