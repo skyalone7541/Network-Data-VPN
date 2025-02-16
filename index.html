@@ -24,62 +24,130 @@
             margin-top: 10px;
             text-align: center;
         }
+        .promo-card {
+            display: none;
+        }
+        .network-logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .promo-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem; /* ปรับขนาดข้อความ */
+            padding: 6px 12px; /* ปรับขนาดปุ่ม */
+            margin: 5px; /* เว้นระยะห่างระหว่างปุ่ม */
+        }
+        .promo-btn img {
+            margin-right: 8px; /* เพิ่มระยะห่างระหว่างโลโก้และข้อความ */
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        .card-body img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* ปรับสีปุ่ม "เพื่อสมัคร" ตามเครือข่าย */
+        .btn-dtac { background-color: #1c8eeb; color: white; }
+        .btn-dtac:hover { background-color: #166bb5; }
+        .btn-true { background-color: #e50914; color: white; }
+        .btn-true:hover { background-color: #b3060f; }
+        .btn-ais { background-color: #00b141; color: white; }
+        .btn-ais:hover { background-color: #009c36; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- ปุ่มแปลภาษา -->
-        <div class="translate-btn">
-            <div id="google_translate_element"></div>
-        </div>
+<div class="container">
+    <div class="translate-btn">
+        <div id="google_translate_element"></div>
+    </div>
 
-        <header class="my-4">
-            <h class="card-title">สิ่งที่ต้องการสำหรับการใช้อินเทอร์เน็ตฟรี</h>
-        </header>
+    <header class="my-4">
+        <h2 class="card-title">สิ่งที่ต้องการสำหรับการใช้อินเทอร์เน็ตฟรี</h2>
+    </header>
 
+    <!-- หน้าแรก (Home Page) -->
+    <div class="text-center">
+        <h3>เลือกเครือข่ายที่ต้องการดูโปรโมชั่น</h3>
+        <button class="btn btn-primary promo-btn" onclick="showPromo('dtac')">
+            <img src="https://www.dtac.co.th/dtac-library/assets/img/icons/ico-dtac.png" alt="Dtac Logo" class="network-logo"> Dtac
+        </button>
+        <button class="btn btn-danger promo-btn" onclick="showPromo('true')">
+            <img src="https://topping.truemoveh.com/assets/static/images/icon_fb&true@3x.82de9630.png" alt="True Logo" class="network-logo"> True
+        </button>
+        <button class="btn btn-success promo-btn" onclick="showPromo('ais')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBwSTp4vgOVqME3OlQ30ghtLyl08fqw1xsemUKEdPNm937DFZ4CZlI_Zcn&s=10" alt="AIS Logo" class="network-logo"> AIS
+        </button>
+    </div>
+
+    <!-- Dtac Promo -->
+    <div id="dtac" class="promo-card mt-4">
         <div class="row">
-            <!-- Dtac Card -->
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
                         <img src="https://www.dtac.co.th/dtac-library/assets/img/icons/ico-dtac.png" alt="Dtac Logo" class="card-img-center" style="max-height: 50px; width: auto;">
                         <p>หากใช้ซิม Dtac ต้องสมัครแพ็กเกจ id ก่อน</p>
                         id แพ็กเกจ 64 บาท / 30 วัน
-                        <p><b>*900*3958#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*900*3958%23'">เพื่อสมัคร</button></p>
+                        <p><b>*900*3958#</b> กด <button class="btn btn-dtac btn-sm" onclick="location.href='tel:*900*3958%23'">เพื่อสมัคร</button></p>
                         <p>(หลังสมัคร id แล้ว ให้เลือกไฟล์ Dtac ID และเชื่อมต่อ)</p>
                         <img src="https://bbm2gth.shop/Dtac_ID.jpg" class="img-thumbnail" alt="ภาพ (dtac_id)">
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- True Card -->
+    <!-- True Promo -->
+    <div id="true" class="promo-card mt-4">
+        <div class="row">
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
                         <img src="https://topping.truemoveh.com/assets/static/images/icon_fb&true@3x.82de9630.png" alt="True Logo" class="card-img-center" style="max-height: 30px; width: auto;">
                         <p>หากใช้ซิม True ต้องสมัครแพ็กเกจ viber ก่อน</p>
                         viber แพ็กเกจ 53 บาท / 30 วัน
-                        <p><b>*900*3809#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*900*3809%23'">เพื่อสมัคร</button></p>
+                        <p><b>*900*3809#</b> กด <button class="btn btn-true btn-sm" onclick="location.href='tel:*900*3809%23'">เพื่อสมัคร</button></p>
                         <p>(หลังสมัคร viber แล้ว ให้เลือกไฟล์ True Viber และเชื่อมต่อ)</p>
                         <img src="https://bbm2gth.shop/True_viber.jpg" class="img-thumbnail" alt="ภาพ (true_viber)">
-                        <p>.</p>
-                        <p>.</p>
-                        <p>.</p>
                         <p>อีกวิธีสำหรับ True</p>
                         <p>ใช้แพ็กเกจ True ID และดูวิธีการในวิดีโอด้านล่าง</p>
                         <div>ลิงก์สมัคร 👇👇</div>
-                        <a href="#" onclick="openInBrowser()">https://topping.truemoveh.com/true-easy-check?callback=SCROLL_INTO_PACKAGE_LIST</a>
+                        <a href="#" onclick="openInBrowser()">https://topping.truemoveh.com</a>
                         <p>หลังจากสมัคร True ID แล้ว ให้เลือก True ID (OVPN) เพื่อเชื่อมต่อ</p>
                         <video controls poster="https://bbm2gth.shop/True_ID.jpg">
-                            <source src="https://github.com/sansoe2022/image_store/raw/refs/heads/main/trueid_video.mp4" type="video/mp4">เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+                            <source src="https://github.com/sansoe2022/image_store/raw/refs/heads/main/trueid_video.mp4" type="video/mp4">
+                            <p>เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ</p>
                         </video>
                         <p class="true">หมายเหตุ: ความเร็วเน็ต 3mbps แพ็กเกจ True ID มีปัญหาการเชื่อมต่อน้อยกว่า</p>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- โปรโมชั่น "เรียนฟรี" สำหรับ True -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p>โปรโมชั่นใหม่ "เรียนฟรี" สำหรับซิม True</p>
+                        <p>ราคา 79 บาท / 30 วัน</p>
+                        <p><b>*900*1880#</b> กด <button class="btn btn-true btn-sm" onclick="location.href='tel:*900*1880%23'">เพื่อสมัคร</button></p>
+                        <p>สมัครเพื่อใช้งานอินเทอร์เน็ตฟรีสำหรับการเรียนออนไลน์</p>
+                        <!-- ใส่รูปภาพของโปรโมชั่น -->
+                        <img src="https://bbm2gth.shop/true_vdo.jpg" class="img-thumbnail" alt="โปรโมชั่นเรียนฟรี">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <!-- Ais Card -->
+    <!-- AIS Promo -->
+    <div id="ais" class="promo-card mt-4">
+        <div class="row">
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
@@ -88,45 +156,39 @@
                         <p>หลังสมัครโปรโมชั่นหลักและ Ais Play แล้ว ให้เลือกไฟล์ Ais_Play เพื่อเชื่อมต่อ</p>
                         <img src="https://bbm2gth.shop/Ais_Play.jpg" class="img-thumbnail" alt="ภาพ (1)">
                         โปรโมชั่นหลัก 64kbps - 32 บาท / 30 วัน
-                        <p><b>*777*7067#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*777*7067%23'">เพื่อสมัคร</button></p>
+                        <p><b>*777*7067#</b> กด <button class="btn btn-ais btn-sm" onclick="location.href='tel:*777*7067%23'">เพื่อสมัคร</button></p>
                         <p>Ais Play แพ็กเกจ - 64 บาท / 30 วัน</p>
-                        <p><b>*777*885#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*777*885%23'">เพื่อสมัคร</button></p>
+                        <p><b>*777*885#</b> กด <button class="btn btn-ais btn-sm" onclick="location.href='tel:*777*885%23'">เพื่อสมัคร</button></p>
                         <p class="true">หมายเหตุ: ต้องสมัครทั้งสองแพ็กเกจก่อนใช้งาน</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <footer class="text-center mt-4">
-            <p>&copy; 2024 โปรโมชั่นอินเทอร์เน็ตฟรี</p>
-        </footer>
     </div>
 
-    <!-- Google Translate script -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'th',
-                includedLanguages: 'en,th,my',
-                layout: google.translate.TranslateElement.InlineLayout.DROPDOWN
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 โปรโมชั่นอินเทอร์เน็ตฟรี</p>
+    </footer>
+</div>
 
-    <script>
-        function isWebView() {
-            let userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            return /wv|WebView/i.test(userAgent);
-        }
+<script>
+    function showPromo(network) {
+        // ซ่อนโปรโมชั่นทั้งหมด
+        const promos = document.querySelectorAll('.promo-card');
+        promos.forEach(promo => promo.style.display = 'none');
 
-        function openInBrowser() {
-            window.location.href = "https://topping.truemoveh.com/";
-        }
-    </script>
+        // แสดงโปรโมชั่นของเครือข่ายที่เลือก
+        document.getElementById(network).style.display = 'block';
+    }
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    function openInBrowser() {
+        window.open("https://topping.truemoveh.com/", "_blank");
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
